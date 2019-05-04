@@ -1,0 +1,101 @@
+#include<iostream>
+#include <conio.h>
+#include <cmath>
+using namespace std;
+
+//SodiumNitrogenZinc//
+
+int main()
+
+{	
+	int aHrs,bHrs,cHrs, moBillA,moBillB,moBillC, atotamt,btotamnt,ctotamt;
+	char choice;
+	cout << "Welcome to Enter The Net Computer Shop !! \n";
+	cout << "Enter the desired package that you suites your time !! \n";
+	
+	cout << "Which package would you prefer? \n";
+	cout << "Package A:For P995/mo 10 hrs of access are provided. Additional hours are P20/hr. \n";
+	cout << "Package B:For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr. \n";
+	cout << "Package C:For P1995/mo of unlimited access is provided. \n";
+	
+	cin>> choice;
+	
+	switch (choice)
+	{
+		case 'A':
+		case 'a':
+					moBillA = 995;
+				cout << "You've purchaged Package A !! \n "; 
+				cout<< "Enter number of hours: "; cin>> aHrs;
+					
+						if (aHrs < 10)
+						(atotamt = ((10-aHrs)*20) - moBillA);
+						
+						if (aHrs > 10)
+						(atotamt = ((aHrs-10)*20) + moBillA);
+					
+						
+						
+						if (atotamt < moBillA )
+						cout << "YOUR FINAL PAYMENT: " << moBillA << endl; 
+						if (atotamt > moBillA )
+						cout << "YOUR FINAL PAYMENT: " << atotamt << endl;
+					
+							
+				
+					
+				cout << "The total amount of hours: " << aHrs<< endl;
+				cout << "Please Come Again !! \n";
+				break; 
+				
+				
+		case 'B':
+		case 'b':
+				moBillB = 1495;
+				cout << "You've purchased Package B !! \n "; 
+				cout<< "Enter number of hours: "; cin>> bHrs;
+					
+						if (bHrs > 20)
+						(btotamnt = ((bHrs-20)*10) + moBillB);
+						
+						
+						
+						if (bHrs < 20)
+						(btotamnt = ((20-bHrs)*10) - moBillB);
+						
+						
+				
+						if (btotamnt < moBillB )
+						cout << "YOUR FINAL PAYMENT: " << moBillB << endl; 
+						if (btotamnt > moBillB )
+						cout << "YOUR FINAL PAYMENT: " << btotamnt << endl;
+					
+				
+				cout << "The total amount of hours: " << bHrs<< endl;
+				cout << "Please Come Again !! \n";
+				break; 
+				
+		case 'C':
+		case 'c':
+				moBillC = 1995;
+				cout << "You've purchased Package C !! \n "; 
+				cout<< "Enter number of hours: "; cin>> cHrs;
+					
+						if (cHrs > 1)
+						
+						(ctotamt = moBillC);
+						cout <<"YOUR FINAL PAYMENT: "<< ctotamt << endl;
+				
+					
+				cout << "The total amount of hours: " << cHrs<< endl;
+				cout << "Please Come Again !! \n";
+				break; 
+				
+		default:
+			cout << "WARNING YOU DIDN'T CHOOSE FROM THE PACAKGE ABOVE, BECAUSE OF YOUR ACTION THE PROGRAM WILL TERMINATE";
+			
+			//SodiumNitrogenZinc//
+	}
+		return 0;
+		
+}
