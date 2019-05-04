@@ -1,0 +1,26 @@
+#include<iostream>
+#include <conio.h>
+#include <cmath>
+using namespace std;
+
+
+int main()
+
+{	int waterbillbalance, Galyonsused, utangbalance;
+
+    cout << "Welcome to Water Bill Calc !! \n";
+	cout << "Please enter the no. of gallons used: \n"; cin >> Galyonsused;
+	cout << "Please enter (if any, write 0 if none) unpaid balance: \n"; cin >> utangbalance;
+	
+	// Eto kapag may utang ka so plus 20//
+	if (utangbalance > 0)
+	  cout << "TOTAL BILL = " << 35 + (1.10 * Galyonsused) + 20 << endl;
+	  // Eto naman kapag walang utang kasi mayaman ka so walang plus 20//
+	  
+	else
+	  cout << "TOTAL BILL = " << 35 + (1.10 * Galyonsused) << endl;
+	
+	
+	//SodiumNitrogenZinc//
+	return 0;
+}
