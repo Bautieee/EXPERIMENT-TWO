@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+//SodiumNitrogenZinc//
+
+int main()
+{    
+    float josh, gab, bau;
+
+    cout << "Enter three numbers: ";
+    cin >> josh >> gab >> bau;
+
+    if(josh >= gab && josh >= bau)
+    {
+        cout << "Largest number: " << josh;
+    }
+
+    if(gab >= josh && gab >= bau)
+    {
+        cout << "Largest number: " << gab;
+    }
+
+    if(bau >= josh && bau >= gab) {
+        cout << "Largest number: " << bau;
+    }
+    
+//SodiumNitrogenZinc//
+    return 0;
+}
