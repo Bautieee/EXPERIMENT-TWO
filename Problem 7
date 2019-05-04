@@ -1,0 +1,34 @@
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int nnz, ex;
+
+int main ()
+{
+    do
+	{
+        cout << "Enter a number: ";
+        cin >> nnz;
+        ex=0;
+        
+        for(int ctr=0;ctr<=nnz;ctr++)
+		{    
+            if (nnz < 1){
+                cout<<"Thank you!"<<endl;
+                break;
+            }
+            else
+			{
+                ex += ctr;
+            }
+        }
+        if(nnz>0)
+            cout<<"The sum of all whole numbers from 1 to "<< nnz <<" is "<< ex <<endl;
+    }
+	while(nnz>0);
+    
+    return 0;
+}
