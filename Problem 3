@@ -1,0 +1,68 @@
+#include <iostream>
+#include <cmath>
+#include <stdio.h>
+using namespace std;
+//SodiumNitrogenZinc//
+int main()
+
+{
+	float x,x2,x3, y,y2,y3,y2a, z;
+	char choice;
+	
+	cout << "Welcome to Problem 3 !! \n";
+		
+	cout << "When x  = 1 and 1<y<5   V= xyz  		\n";
+	cout << "When x  = 1 and y>=5 	V= x + y/z 		\n";
+	cout << "When x  = 2 and y<=5 	V= |(x – y)/z|  \n";
+	cout << "When x  = 2 and y>5 	V= x-v x + y    \n";
+	cout << "When x >= 3 and y=n	V = x +y + z 	\n";
+	
+	cout << "Enter value of x: ";
+	cin >> choice;
+
+	
+	switch (choice)
+	{
+		case '1':
+				z = 2.5;
+				x = 1;
+				cout << "Input Y value: "; cin>> y;
+					
+					if (y < 5)
+					cout << "V= " << (x*y*z); 
+					
+					
+					if (y >= 5)	
+					cout <<"V = " << (x+y)/2.5;
+					break;
+					
+					
+		case '2':
+				z = 2.5;
+				x2 = 2;
+				cout << "Input Y value: "; cin>> y2;
+				
+				if (y2<=5)
+					
+				cout <<"V= "  << abs (x2-y2)/z; 
+				
+				if  (y2>5)
+				
+				
+				cout << "V= "<< x2 - (sqrt (y2+z));
+				break;
+				
+		default:
+			
+				z = 2.5;
+				cout << "Please enter the value of x again: "; cin>> x3;
+				cout << "Input Y value: "; cin>> y3;
+				
+				cout <<"V= "  << x3 + y3 + z; 
+				break;
+				
+	}
+	//SodiumNitrogenZinc//
+	return 0;
+	
+}
